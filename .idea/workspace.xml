@@ -4,39 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24f5fac8-d103-4ac9-8291-e438d28d9f37" name="Changes" comment="first : init">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nely/gesfond/Controller/FondController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nely/gesfond/Controller/TypeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nely/gesfond/Controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nely/gesfond/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nely/gesfond/Model/Fond.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nely/gesfond/Model/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nely/gesfond/Model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nely/gesfond/View/AddFond.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nely/gesfond/View/Connexion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nely/gesfond/View/Dashbord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nely/gesfond/dbHelper/Connector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/asset/1000_F_322780498_eQsxRjCqIlwYlC93dvqR6Zw7pCqrznjU (3).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/asset/application.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/nely/gesfond/AddFond.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/nely/gesfond/connexion.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/nely/gesfond/dashbord.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="24f5fac8-d103-4ac9-8291-e438d28d9f37" name="Changes" comment="first : init" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,8 +94,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1677433189386</updated>
-      <workItem from="1677433190884" duration="29106000" />
+      <workItem from="1677433190884" duration="29441000" />
     </task>
+    <task id="LOCAL-00001" summary="first : init">
+      <created>1677464475629</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677464475629</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
