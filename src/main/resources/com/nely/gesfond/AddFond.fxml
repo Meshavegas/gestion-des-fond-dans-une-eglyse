@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nely.gesfond.View.AddFond">
+    <children>
+        <GridPane prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #ffc971;">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="161.0" minHeight="10.0" prefHeight="89.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="429.0" minHeight="10.0" prefHeight="411.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="Enregistrement d'un Fond" wrappingWidth="400.5078125">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Text>
+                <VBox prefHeight="433.0" prefWidth="400.0" GridPane.rowIndex="1">
+                    <children>
+                        <Text fx:id="adh_statut" fill="#f50000" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="399.13671875">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Text>
+                        <TextField fx:id="fond_mont" promptText="Montant" style="-fx-background-radius: 6;">
+                            <VBox.margin>
+                                <Insets left="20.0" right="20.0" top="6.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="fond_origine" promptText="Obtenue à :" style="-fx-background-radius: 6;">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="20.0" right="20.0" top="6.0" />
+                            </VBox.margin>
+                        </TextField>
+                  <ComboBox fx:id="type_combo" prefHeight="36.0" prefWidth="360.0" promptText="Destiner à :" style="-fx-background-radius: 6;">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="6.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <ComboBox fx:id="income_com" prefHeight="36.0" prefWidth="360.0" promptText="Selectioner le type : " style="-fx-background-radius: 6;">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="7.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                        <DatePicker fx:id="adh_datn" prefHeight="40.0" prefWidth="368.0" promptText="Date de collecte" style="-fx-background-radius: 6;">
+                            <VBox.margin>
+                                <Insets left="20.0" right="20.0" top="6.0" />
+                            </VBox.margin>
+                        </DatePicker>
+                        <HBox alignment="TOP_CENTER" prefHeight="37.0" prefWidth="400.0">
+                            <children>
+                                <Button fx:id="adh_anuler" onAction="#OnBtnClick" style="-fx-background-color: #fc0000;" text="ANNULLER" textFill="WHITE">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets right="24.0" />
+                                    </HBox.margin>
+                                </Button>
+                                <Button fx:id="adh_valider" graphicTextGap="21.0" mnemonicParsing="false" onAction="#OnBtnClick" prefHeight="35.0" prefWidth="87.0" style="-fx-background-color: #1ddd3d;" text="VALIDER" textFill="#2d322e">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="61.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                            <VBox.margin>
+                                <Insets top="17.0" />
+                            </VBox.margin>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>

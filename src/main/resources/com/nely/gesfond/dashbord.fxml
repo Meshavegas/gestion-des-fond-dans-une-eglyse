@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="650.0" maxWidth="1200.0" minHeight="650.0" minWidth="1000.0" prefHeight="650.0" prefWidth="1100.0" stylesheets="@../../../asset/application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nely.gesfond.View.Dashbord">
+   <children>
+      <HBox layoutX="-4.0" prefHeight="654.0" prefWidth="1100.0">
+         <children>
+            <VBox prefHeight="654.0" prefWidth="256.0" style="-fx-background-color: #84dcc6;">
+               <children>
+                  <ImageView fitHeight="244.0" fitWidth="293.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../asset/1000_F_322780498_eQsxRjCqIlwYlC93dvqR6Zw7pCqrznjU%20(3).jpg" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion de Fond" textAlignment="CENTER" wrappingWidth="252.8033905029297">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="ac_btn" mnemonicParsing="false" onAction="#onNavigate" prefHeight="25.0" prefWidth="260.0" style="-fx-background-color: #FCA311; -fx-background-radius: 34;" styleClass="btn" text="Tableau de Bord" textFill="#fffbfb">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="#fffefe" glyphName="HOME" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="his_btn" mnemonicParsing="false" onAction="#onNavigate" prefHeight="25.0" prefWidth="260.0" style="-fx-background-color: #FCA311; -fx-background-radius: 34;" styleClass="btn" text="Historique" textAlignment="CENTER" textFill="#fffbfb">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="#fffefe" glyphName="LIST" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="13.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="stat_btn" mnemonicParsing="false" onAction="#onNavigate" prefHeight="25.0" prefWidth="260.0" style="-fx-background-color: #FCA311; -fx-background-radius: 34;" styleClass="btn" text="Statistique" textFill="#fffbfb">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="#fffefe" glyphName="BAR_CHART" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="13.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="user_txt" layoutX="8.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue," wrappingWidth="236.80337071418762">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <StackPane prefHeight="654.0" prefWidth="850.0">
+               <children>
+                  <Pane fx:id="his_pane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <GridPane fx:id="his_grid" prefHeight="654.0" prefWidth="852.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="317.0" minHeight="10.0" prefHeight="69.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="585.0" minHeight="10.0" prefHeight="585.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <TextField fx:id="his_seach" prefHeight="60.0" prefWidth="547.0" promptText="Rechercher" style="-fx-background-color: #14213D; -fx-background-radius: 78; -fx-border-color: #ffffff;">
+                                       <font>
+                                          <Font size="28.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="11.0" top="6.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Button fx:id="his_seach_btn" mnemonicParsing="false" onAction="#onBtnClick" style="-fx-background-color: #FCA311;">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" />
+                                       </graphic>
+                                       <font>
+                                          <Font size="28.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="6.0" top="6.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="his_refresh_btn" mnemonicParsing="false" onAction="#onBtnClick" style="-fx-background-color: #004e98;">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="UNDO" />
+                                       </graphic>
+                                       <font>
+                                          <Font size="28.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="6.0" top="6.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="his_add_btn" mnemonicParsing="false" onAction="#onBtnClick" prefHeight="56.0" prefWidth="148.0" style="-fx-background-color: #e5383b;" text="Add" textFill="WHITE">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="PLUS_SQUARE">
+                                             <font>
+                                                <Font size="34.0" />
+                                             </font>
+                                          </FontAwesomeIconView>
+                                       </graphic>
+                                       <font>
+                                          <Font size="28.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="6.0" right="6.0" top="6.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <TableView fx:id="his_table" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                <columns>
+                                  <TableColumn fx:id="his_ti_col" prefWidth="75.0" text="ID" />
+                                  <TableColumn fx:id="mnt_his_col" prefWidth="94.0" text="Montant(FCFA)" />
+                                    <TableColumn fx:id="type_his_col" prefWidth="152.0" text="Type" />
+                                    <TableColumn fx:id="date_his_col" prefWidth="82.3333740234375" text="Date" />
+                                    <TableColumn fx:id="origine_his_col" prefWidth="127.33331298828125" text="Origine" />
+                                    <TableColumn fx:id="efect_his_col" prefWidth="118.6666259765625" text="Effecetuer Par" />
+                                    <TableColumn fx:id="isIncome_his_col" prefWidth="106.33331298828125" text="Entrées/Sorties" />
+                                    <TableColumn fx:id="action_his_col" prefWidth="73.0" text="Action" />
+                                </columns>
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="13.0" />
+                                 </GridPane.margin>
+                              </TableView>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="ac_pane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <GridPane fx:id="ac_grid" prefHeight="654.0" prefWidth="851.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="317.0" minHeight="10.0" prefHeight="187.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="563.0" minHeight="10.0" prefHeight="467.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <HBox prefHeight="193.0" prefWidth="847.0">
+                                 <children>
+                                    <Pane prefHeight="167.0" prefWidth="396.0" style="-fx-background-color: #E5E5E5; -fx-background-radius: 14;">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="17.0" top="10.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <VBox layoutX="2.0" layoutY="2.0" prefHeight="144.0" prefWidth="372.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fond en caise" wrappingWidth="368.85400390625">
+                                                   <font>
+                                                      <Font size="33.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fx:id="mtn_ac_txt" strokeType="OUTSIDE" strokeWidth="0.0" text="200 000" textAlignment="RIGHT" wrappingWidth="346.85400390625">
+                                                   <font>
+                                                      <Font size="33.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="FCFA" textAlignment="RIGHT" wrappingWidth="342.85400390625">
+                                                   <font>
+                                                      <Font size="33.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="143.0" prefWidth="394.0" style="-fx-background-color: #E5E5E5; -fx-background-radius: 14;">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="13.0" top="10.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <VBox layoutX="16.0" layoutY="10.0" prefHeight="122.0" prefWidth="369.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Transactions" wrappingWidth="368.85400390625">
+                                                   <font>
+                                                      <Font size="33.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fx:id="transac_ac_txt" strokeType="OUTSIDE" strokeWidth="0.0" text="200+" textAlignment="CENTER" wrappingWidth="368.85400390625">
+                                                   <font>
+                                                      <Font size="33.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                 <children>
+                                    <PieChart fx:id="source_ac_pi" prefHeight="467.0" prefWidth="422.0" title="source des Fond" titleSide="BOTTOM" />
+                                    <PieChart fx:id="type_ac_pie" prefHeight="467.0" prefWidth="422.0" title="Les types de fond" titleSide="BOTTOM" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+         </children></HBox>
+   </children>
+</AnchorPane>
